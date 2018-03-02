@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  skip_before_action :verify_authenticity_token
+  
   def index
     render json: Task.order(:id)
   end
