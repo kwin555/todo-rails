@@ -35,7 +35,6 @@ $(function() {
       var $li = $("#listItem-" + data.id);
       $li.replaceWith(liHtml);
       $('.toggle').change(toggleTask);
-
     } );
   }
 
